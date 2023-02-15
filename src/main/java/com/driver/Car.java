@@ -68,13 +68,13 @@ public class Car extends Vehicle {
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
         super(name);
-        currentGear = 1;
-        this.wheels = wheels;
-        this.doors = doors;
-        this.gears = gears;
-        this.isManual = isManual;
-        this.type = type;
-        this.seats = seats;
+        setCurrentGear(1);
+        setWheels(wheels);
+        setDoors(doors);
+        setGears(gears);
+        setManual(isManual);
+        setType(type);
+        setSeats(seats);
     }
 
     public void changeGear(int newGear){
